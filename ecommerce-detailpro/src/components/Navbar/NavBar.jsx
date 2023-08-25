@@ -1,13 +1,13 @@
 import Container from 'react-bootstrap/Container'
 import Nav from 'react-bootstrap/Nav'
-import NavBar from 'react-bootstrap/Navbar'
+import Navbar from 'react-bootstrap/Navbar'
 import NavDropdown from 'react-bootstrap/NavDropdown'
 import CartWidget from './CartWidget/CartWidget'
 
-const Navbar = () => {
+const NavigationBar = () => {
 
         return (
-            <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary">
+          <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary">
             <Container>
               <Navbar.Brand href="#home">Inicio</Navbar.Brand>
               <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -23,7 +23,7 @@ const Navbar = () => {
                 </Nav>
                 <Nav>
                   <Nav.Link href="#carrito">
-                    2 <CartWidget />
+                    <span>2 <CartWidget /></span>
                   </Nav.Link>
                 </Nav>
               </Navbar.Collapse>
@@ -31,4 +31,4 @@ const Navbar = () => {
           </Navbar>
 )}
 
-export default NavBar
+export default NavigationBar
